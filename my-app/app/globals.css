@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --navy-950: #061426;
+  --navy-900: #0a1f35;
+  --navy-800: #102a43;
+  --primary-500: #1e5eff;
+  --cyan-400: #5dd6ff;
+  --soft-white: #f5f8fc;
+  --white: #ffffff;
+  --muted: #a9b8c8;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --shadow-soft: 0 25px 60px rgba(5, 14, 25, 0.35);
+  --font-display: "Manrope", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+}
+
+@theme {
+  --color-background: var(--navy-950);
+  --color-foreground: var(--soft-white);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(93, 214, 255, 0.14), transparent 30%),
+    linear-gradient(180deg, #061426 0%, #0a1f35 100%);
+  color: var(--soft-white);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  transition: all 0.2s ease-out;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--cyan-400);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(93, 214, 255, 0.35);
+}
+
+.page-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.container-shell {
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-shell {
+    padding-inline: 2rem;
+  }
+}
+
+.glass-panel {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
