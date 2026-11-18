@@ -74,7 +74,7 @@ export function Hero() {
                     </div>
 
                     <div className="rounded-full border border-[var(--cyan-400)]/40 bg-[var(--cyan-400)]/10 px-2 py-1 text-xs font-medium text-[var(--cyan-400)]">
-                      BDS
+                      BDS · RDS
                     </div>
 
                   </div>

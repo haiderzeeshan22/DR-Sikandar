@@ -7,12 +7,14 @@ A responsive dental clinic website with online appointment requests, a PostgreSQ
 - **Patients** can request an appointment by choosing a doctor, service, date, and available time.
 - Each request gets a booking reference such as `FD-7K3M9Q`.
 - **Patients** can check their status at `/appointment-status` using the reference and phone number.
+- **Patients** can submit a star rating and written review in the Reviews section; new reviews are shown immediately.
 - **Receptionists** sign in at `/reception/login` and can:
   - See pending requests and today's schedule stats.
   - Filter by status, date, or search by patient, phone, or reference.
   - Approve, decline, complete, or cancel appointments.
   - Add a note that the patient sees on the status page.
 - Appointments are stored in **PostgreSQL** with a database-level guarantee against double-booking the same doctor and time slot.
+- Patient reviews are stored in **PostgreSQL**.
 - Every new screen is mobile-first and responsive.
 
 ## Tech stack
@@ -68,6 +70,7 @@ npm run db:setup
 ```
 
 This applies `db/schema.sql` and `db/seed.sql`. It is safe to run again; it does not delete appointments.
+Run it again after updates that add or change database tables, including the patient reviews feature.
 
 ## 5. Run the app
 
@@ -118,6 +121,7 @@ Main tables:
 - `doctors`
 - `services`
 - `appointments`
+- `reviews`
 
 The partial unique index `appointments_active_slot_unique` prevents double-booking. The `appointments` table also has indexes for status/date, phone lookup, and recent creations.
 
@@ -128,6 +132,8 @@ The partial unique index `appointments_active_slot_unique` prevents double-booki
 | `GET` | `/api/booking-options` | Active doctors and services for the booking form |
 | `GET` | `/api/appointments/availability?doctorId=1&date=YYYY-MM-DD` | Slot availability for a doctor and date |
 | `POST` | `/api/appointments` | Create an appointment request |
+| `GET` | `/api/reviews` | List recent patient reviews |
+| `POST` | `/api/reviews` | Submit a patient review |
 | `GET` | `/api/appointments/lookup?reference=FD-XXXXXX&phone=...` | Patient status lookup |
 | `POST` | `/api/reception/login` | Sign in reception |
 | `POST` | `/api/reception/logout` | Sign out reception |

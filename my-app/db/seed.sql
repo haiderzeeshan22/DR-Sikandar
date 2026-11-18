@@ -1,7 +1,7 @@
 -- Doctors and services published on the website.
 insert into doctors (slug, name, role, image)
 values
-  ('dr-sikandar', 'Dr. Sikandar', 'Founder & Lead Dentist', '/images/doctors/sikandar.PNG'),
+  ('dr-sikandar', 'Dr. Sikandar Abbas', 'Founder & Lead Dentist', '/images/doctors/sikandar.PNG'),
   ('dr-ali-mehdi', 'Dr. Ali Mehdi', 'Bs Dental', '/images/doctors/dr%20Mehdi.jpg'),
   ('dr-hadia-baqir', 'Dr. Hadia Baqir', 'Bs Dental', '/images/doctors/drhadia.jpg'),
   ('dr-najma', 'Dr. Najma', 'Bs Dental', '/images/doctors/Dr%20Najmaa.jpg')

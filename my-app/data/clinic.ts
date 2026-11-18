@@ -42,8 +42,9 @@ export const clinicInfo: ClinicInfo = {
   shortName: "Family Dental Clinic",
   tagline: "",
   founder: {
-    name: "Dr. Sikandar",
-    qualification: "BDS",
+    name: "Dr. Sikandar Abbas",
+    qualification:
+      "BDS, RDS (Pakistan), C. Implantology (South Korea), FSP (Germany), C. Endo, Ex-Lecturer at KMU",
     role: "Founder & Lead Dentist",
     image: "/images/doctors/sikandar.PNG",
   },
@@ -59,13 +60,13 @@ export const clinicInfo: ClinicInfo = {
     mapUrl: "",
   },
   hours: {
-    monday: "9:00 AM - 5:00 PM",
-    tuesday: "9:00 AM - 5:00 PM",
-    wednesday: "9:00 AM - 5:00 PM",
-    thursday: "9:00 AM - 5:00 PM",
-    friday: "9:00 AM - 5:00 PM",
-    saturday: "9:00 AM - 5:00 PM",
-    sunday: "9:00 AM - 5:00 PM",
+    monday: "8:00 AM - 8:00 PM",
+    tuesday: "8:00 AM - 8:00 PM",
+    wednesday: "8:00 AM - 8:00 PM",
+    thursday: "8:00 AM - 8:00 PM",
+    friday: "8:00 AM - 8:00 PM",
+    saturday: "8:00 AM - 8:00 PM",
+    sunday: "8:00 AM - 8:00 PM",
   },
   socialLinks: {
     instagram: "",

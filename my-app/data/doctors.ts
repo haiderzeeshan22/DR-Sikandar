@@ -20,9 +20,10 @@ export type Doctor = {
 export const doctors: Doctor[] = [
   {
     slug: "dr-sikandar",
-    name: "Dr. Sikandar",
+    name: "Dr. Sikandar Abbas",
     role: "Founder & Lead Dentist",
-    qualifications: "BDS",
+    qualifications:
+      "BDS, RDS (Pakistan), C. Implantology (South Korea), FSP (Germany), C. Endo, Ex-Lecturer at KMU",
     image: "/images/doctors/sikandar.PNG",
     bio: "",
     specialties: [],
@@ -40,7 +41,8 @@ export const doctors: Doctor[] = [
     slug: "dr-ali-mehdi",
     name: "Dr. Ali Mehdi",
     role: "Bs Dental",
-    qualifications: "",
+    qualifications:
+      "BS,D (KMU), BS (Hons) Dentistry (KMU), Dental Technologist, Oral Hygienist",
     image: "/images/doctors/dr%20Mehdi.jpg",
     bio: "",
     specialties: [],
@@ -58,7 +60,8 @@ export const doctors: Doctor[] = [
     slug: "dr-hadia-baqir",
     name: "Dr. Hadia Baqir",
     role: "Bs Dental",
-    qualifications: "",
+    qualifications:
+      "BS,D (KMU), BS (Hons) Dentistry (KMU), Dental Technologist, Oral Hygienist",
     image: "/images/doctors/drhadia.jpg",
     bio: "",
     specialties: [],
@@ -76,7 +79,8 @@ export const doctors: Doctor[] = [
     slug: "dr-najma",
     name: "Dr. Najma",
     role: "Bs Dental",
-    qualifications: "",
+    qualifications:
+      "BS,D (KMU), BS (Hons) Dentistry (KMU), Dental Technologist, Oral Hygienist",
     image: "/images/doctors/Dr%20Najmaa.jpg",
     bio: "",
     specialties: [],

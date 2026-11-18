@@ -7,6 +7,7 @@ import { Contact } from "@/components/sections/Contact";
 import { Doctors } from "@/components/sections/Doctors";
 import { FAQ } from "@/components/sections/FAQ";
 import { Hero } from "@/components/sections/Hero";
+import { Reviews } from "@/components/sections/Reviews";
 import { Services } from "@/components/sections/Services";
 import { ServiceDetail } from "@/components/sections/ServiceDetail";
 import { services } from "@/data/services";
@@ -57,6 +58,7 @@ export default function HomePage() {
       <About />
       <Doctors />
       <Services />
+      <Reviews />
       <Booking />
       <FAQ />
       <Contact />

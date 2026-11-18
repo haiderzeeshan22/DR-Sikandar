@@ -62,3 +62,13 @@ export const receptionLoginSchema = z.object({
     .min(1, "Enter the reception passcode.")
     .max(200, "Passcode is too long."),
 });
+
+export const createReviewSchema = z.object({
+  name: z.string().trim().min(2, "Enter your name.").max(80, "Name is too long."),
+  rating: z.coerce.number().int().min(1).max(5),
+  review: z
+    .string()
+    .trim()
+    .min(10, "Please share a little more about your experience.")
+    .max(1200, "Review must be 1200 characters or fewer."),
+});

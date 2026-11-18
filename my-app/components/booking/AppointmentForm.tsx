@@ -494,7 +494,7 @@ export function AppointmentForm() {
             name="doctorId"
             value={form.doctorId}
             onChange={(event) => updateField("doctorId", event.target.value)}
-            className={inputClasses}
+            className={`${inputClasses} [color-scheme:dark]`}
             disabled={optionsLoading}
             aria-invalid={Boolean(fieldErrors.doctorId)}
             aria-describedby={
@@ -526,7 +526,7 @@ export function AppointmentForm() {
             name="serviceId"
             value={form.serviceId}
             onChange={(event) => updateField("serviceId", event.target.value)}
-            className={inputClasses}
+            className={`${inputClasses} [color-scheme:dark]`}
             disabled={optionsLoading}
             aria-invalid={Boolean(fieldErrors.serviceId)}
             aria-describedby={

@@ -54,6 +54,17 @@ create index if not exists appointments_phone_digits_idx
 create index if not exists appointments_created_at_idx
   on appointments (created_at desc);
 
+create table if not exists reviews (
+  id bigserial primary key,
+  name text not null,
+  rating smallint not null check (rating between 1 and 5),
+  review text not null,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists reviews_created_at_idx
+  on reviews (created_at desc);
+
 create or replace function set_updated_at()
 returns trigger as $$
 begin
